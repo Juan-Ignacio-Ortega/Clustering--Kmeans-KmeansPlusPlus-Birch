@@ -1,4 +1,4 @@
-# Kmeans---KmeansPlusPlus---Birch
+# Kmeans - KmeansPlusPlus - Birch
 
 ## 1 Introduction
 The grouping is in everyday life, because it cannot be separated with a series of data that produce information to satisfy the needs of life. One of the most important tools in relation to data is to classify it, specifically in a set of categories or clusters (Syakur, Khotimah, Rochman, & Satoto, 2018).
