@@ -1,4 +1,7 @@
-Introduction
+
+Kmeans---KmeansPlusPlus---Birch
+
+1 Introduction
 The grouping is in everyday life, because it cannot be separated with a series of data that produce information to satisfy the needs of life. One of the most important tools in relation to data is to classify it, specifically in a set of categories or clusters (Syakur, Khotimah, Rochman, & Satoto, 2018).
 The clustering process is defined as the grouping of similar objects into groups or groupings. Objects belonging to one group should be very similar to each other, but objects in different groups will be different. One difficulty in this process is that we do not have any prior knowledge about the structure of the data, or its labels, because clustering is considered an unsupervised learning problem (Eltibi & Ashour, 2011).
 In this project, the Kmeans clustering algorithms, their evolution K-mean++ and finally Birch are addressed, analyzing their operation through their construction step by step, being possible a precise visualization of each section of the algorithms. In addition, a comparison of the results obtained with the algorithms developed and those existing in libraries is made, to finally show a comparison of the performance of these three algorithms for a standard database with relatively few data (Cui, 2020).
