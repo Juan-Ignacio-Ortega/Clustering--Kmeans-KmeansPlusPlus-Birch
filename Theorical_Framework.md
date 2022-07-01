@@ -11,6 +11,7 @@ In order for the centroid of a clustering algorithm to no longer change, you nee
 The elbow method is suitable for relatively small values ​​of k. The elbow method calculates the squared difference of different values ​​of k. As the value of k increases, the average degree of distortion becomes smaller. The number of samples contained in each category decreases and the samples are closer to the center of gravity. As the value of k increases, the position where the effect of improving the degree of distortion decreases the most is the value of k corresponding to the knee.
 A variable is introduced, WCSS (Sum of squares within a group), which measures the variance within each group. The better the clustering, the lower the overall WCSS (Cui, 2020).
 
+
 Figure 1 Formula of the elbow method for WCSS (Cui, 2020).
 We use the following figure as an example:
 
