@@ -16,6 +16,8 @@ A variable is introduced, WCSS (Sum of squares within a group), which measures t
 Figure 1 Formula of the elbow method for WCSS (Cui, 2020).
 We use the following figure as an example:
 
+![alt text](https://github.com/Juan-Ignacio-Ortega/Kmeans---KmeansPlusPlus---Birch/blob/main/ElbowMethodExample.png?raw=true)
+
 Figure 2. An example of the elbow criterion (Cui, 2020).
 
 ### 2.2 K-Means clustering
@@ -25,9 +27,20 @@ The model is either a centroid-based algorithm or a distance-based algorithm. We
 Algorithm implementation steps:
 1. Determine the number of clusters K and the maximum number of iterations.
 2. Do the midpoint group K initialization process, then the centroid counting function equation:
+
+![alt text](https://github.com/Juan-Ignacio-Ortega/Kmeans---KmeansPlusPlus---Birch/blob/main/Ci.png?raw=true)
+
 Equation 1 is done as much as p dimensions from i = 1 to i = p. 3. Connect any observation data to the closest group. Euclidean distance spacing measures can be found using Equation 2.
+
+![alt text](https://github.com/Juan-Ignacio-Ortega/Kmeans---KmeansPlusPlus---Birch/blob/main/dis.png?raw=true)
+
 Reassignment of data to each group based on the comparison of the distance between the data with the centroid of each group.
+
+![alt text](https://github.com/Juan-Ignacio-Ortega/Kmeans---KmeansPlusPlus---Birch/blob/main/aij.png?raw=true)
+
 Recalculate the position of the midpoint of the group. aij is the membership value of point xi to the centers of group c1, d is the shortest distance of data xi to group K after being compared, and c1 is the center of group a 1. The objective function used by this method is based on the distance and value of the data membership in the group. The objective function according to MacQueen (1967) can be determined by the equation.
+
+![alt text](https://github.com/Juan-Ignacio-Ortega/Kmeans---KmeansPlusPlus---Birch/blob/main/J.png?raw=true)
 
 n is the amount of data, k is the number of groups, ai1 is the membership value of the data point xi to the group c1 followed by a has a value of 0 or 1. If the data is an ngota of a group, the value ai1 = 1. Otherwise, the value ai1 = 0.
 
@@ -35,6 +48,8 @@ n is the amount of data, k is the number of groups, ai1 is the membership value 
 
 ### 2.3 K-Means++ clustering
 In the case of finding initial centroids using Lloyd's algorithm for K-Means clustering, we were using randomization. The initial k-centroids were randomly selected from the data points (Kumar, 2020).
+
+![alt text](https://github.com/Juan-Ignacio-Ortega/Kmeans---KmeansPlusPlus---Birch/blob/main/K-meansinitproblem.png?raw=true)
 
 Figure 3. Different Final Clusters formed by different initialization (Kumar, 2020).
 
@@ -54,12 +69,18 @@ BIRCH stands for Balanced Iterative Reducing and Clustering Using Hierarchies in
 2.4.1 Clustering Feature (CF)
 A Cluster feature (CF) entry is a triple that summarizes the information we hold about a subgroup of data points (Zhang, Ramakrishnan, & Livny, 1997). It is defined as:
 
+![alt text](https://github.com/Juan-Ignacio-Ortega/Kmeans---KmeansPlusPlus---Birch/blob/main/CFParameters.png?raw=true)
+
 Figure 4. Parameters of a CF (Test[UC0krgpwFJjpDpxr_nZr17JA], 2021).
+
+![alt text](https://github.com/Juan-Ignacio-Ortega/Kmeans---KmeansPlusPlus---Birch/blob/main/CFBuildexample.png?raw=true)
 
 Figure 5. Example of CF construction (Test[UC0krgpwFJjpDpxr_nZr17JA], 2021).
 
 ### 2.5 Preliminaries
 It can be used to calculate other essential values ​​for grouping:
+
+![alt text](https://github.com/Juan-Ignacio-Ortega/Kmeans---KmeansPlusPlus---Birch/blob/main/BIRCHbackground.png?raw=true)
 
 Figure 6. Preliminary formulations in the Birch algorithm
 (Test[UC0krgpwFJjpDpxr_nZr17JA], 2021).
@@ -74,6 +95,8 @@ B: Branching factor, length of an internal node.
 L: Length of a leaf node.
 B, L depends on the size of the memory page (Test[UC0krgpwFJjpDpxr_nZr17JA], 2021).
 
+![alt text](https://github.com/Juan-Ignacio-Ortega/Kmeans---KmeansPlusPlus---Birch/blob/main/CFTREE.png?raw=true)
+
 Figure 7 Structure of a CF-Tree (Test[UC0krgpwFJjpDpxr_nZr17JA], 2021).
 
 ### 2.7 Insert algorithm
@@ -84,6 +107,8 @@ We now present the algorithm for inserting a CF entry 'Ent' (a single data point
 4. A merge refinement: The splits are caused by the size of the page, which is independent of the grouping properties of the data. In the presence of skewed data entry order, this can affect the quality of the clustering and also reduce space utilization. A simple additional merge step often helps to improve these problems: suppose there is a leaf split and the propagation of this split stops at some non-leaf node Nj, i.e. Nj can accommodate the additional input resulting from the division. We now scan node Nj to find the two closest entries. If they are not the pair corresponding to the split, we try to merge them and the two corresponding child nodes. If there are more entries in the two child nodes than a page can hold, we split the result of the merge again. During the new split, in case one of the seeds pulls in enough merged entries to fill a page, we simply drop the rest of the entries with the other seed. In short, if the combined entries fit on a single page, we free up one node (page) for later use and make room for one more entry at node Nj, thus increasing space utilization and postponing future splits; otherwise, we improve the distribution of entries in the two closest children (Zhang, Ramakrishnan & Livny, 1997).
 
 ### 2.8 The BIRCH clustering algorithm
+
+![alt text](https://github.com/Juan-Ignacio-Ortega/Kmeans---KmeansPlusPlus---Birch/blob/main/FasesBIRCH.png?raw=true)
 
 Figure 8. Summary of the phases of the BIRCH algorithm (Zhang, Ramakrishnan & Livny, 1997).
 
