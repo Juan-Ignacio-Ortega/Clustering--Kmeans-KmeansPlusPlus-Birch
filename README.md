@@ -12,6 +12,7 @@ The elbow method is suitable for relatively small values ​​of k. The elbow m
 A variable is introduced, WCSS (Sum of squares within a group), which measures the variance within each group. The better the clustering, the lower the overall WCSS (Cui, 2020).
 
 ![alt text](https://github.com/Juan-Ignacio-Ortega/Kmeans---KmeansPlusPlus---Birch/blob/main/WCSS.png?raw=true)
+
 Figure 1 Formula of the elbow method for WCSS (Cui, 2020).
 We use the following figure as an example:
 
