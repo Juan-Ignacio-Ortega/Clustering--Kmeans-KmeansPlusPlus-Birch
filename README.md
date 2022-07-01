@@ -1,5 +1,5 @@
 # Kmeans - Kmeans++ - Birch
-## 0 Codes and descriptions
+## 0 - Codes and descriptions
 
 ### Kmeans Code
 https://github.com/Juan-Ignacio-Ortega/Kmeans---KmeansPlusPlus---Birch/blob/main/KmeansCode_JIOG.py
@@ -16,12 +16,12 @@ https://github.com/Juan-Ignacio-Ortega/Kmeans---KmeansPlusPlus---Birch/blob/main
 ### Birch Descriptions
 https://github.com/Juan-Ignacio-Ortega/Kmeans---KmeansPlusPlus---Birch/blob/main/BirchDescription_JIOG.ipynb
 
-## 1 Introduction
+## 1 - Introduction
 The grouping is in everyday life, because it cannot be separated with a series of data that produce information to satisfy the needs of life. One of the most important tools in relation to data is to classify it, specifically in a set of categories or clusters (Syakur, Khotimah, Rochman, & Satoto, 2018).
 The clustering process is defined as the grouping of similar objects into groups or groupings. Objects belonging to one group should be very similar to each other, but objects in different groups will be different. One difficulty in this process is that we do not have any prior knowledge about the structure of the data, or its labels, because clustering is considered an unsupervised learning problem (Eltibi & Ashour, 2011).
 In this project, the Kmeans clustering algorithms, their evolution K-mean++ and finally Birch are addressed, analyzing their operation through their construction step by step, being possible a precise visualization of each section of the algorithms. In addition, a comparison of the results obtained with the algorithms developed and those existing in libraries is made, to finally show a comparison of the performance of these three algorithms for a standard database with relatively few data (Cui, 2020).
 
-## 2 Theoretical framework
+## 2 - Theoretical framework
 ### 2.1 Elbow criterion
 In order for the centroid of a clustering algorithm to no longer change, you need to pay attention to the choice of the value of K, but there is a shortcoming related to the choice of the initial K points. To solve this problem, the performance of the algorithm for different numbers of centroids is calculated. By evaluating, whenever convergence occurs, the distance between the centroid of each cluster and the data point can be calculated. Then add up all the calculated distances as a performance indicator. As the number of cluster centroids increases, the size of the objective function will decrease. In order to select the best K, the elbow method is often used.
 The elbow method is suitable for relatively small values ​​of k. The elbow method calculates the squared difference of different values ​​of k. As the value of k increases, the average degree of distortion becomes smaller. The number of samples contained in each category decreases and the samples are closer to the center of gravity. As the value of k increases, the position where the effect of improving the degree of distortion decreases the most is the value of k corresponding to the knee.
@@ -133,7 +133,7 @@ Calculates the mean silhouette coefficient of all samples. The Silhouette Coeffi
 This function returns the mean silhouette coefficient of all samples. To get the values ​​for each sample, use silhouette_samples.
 The best value is 1 and the worst value is -1. Values ​​close to 0 indicate overlapping clusters. Negative values ​​generally indicate that a sample has been assigned to the wrong cluster, since a different cluster is more similar (sklearn.metrics.silhouette_score, n.d.).
 
-## 3 References 
+## 3 - References 
 1. Cui, M. (2020). Introduction to the k-means clustering algorithm based on the elbow method. Accounting, Auditing and Finance, 1(1), 5-8. 
 2. Eltibi, M. F., & Ashour, W. M. (2011). Initializing k-means clustering algorithm using statistical information. International Journal of Computer Applications, 29(7). 
 3. Kumar, S. (2020, junio 11). Understanding K-means, K-means++ and, K-medoids Clustering Algorithms. Towards Data Science. https://towardsdatascience.com/understanding-kmeans- k-means-and-k-medoids-clustering-algorithms-ad9c9fbf47ca 
