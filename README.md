@@ -1,4 +1,20 @@
 # Kmeans - Kmeans++ - Birch
+## 0 Codes and descriptions
+
+### Kmeans Code
+https://github.com/Juan-Ignacio-Ortega/Kmeans---KmeansPlusPlus---Birch/blob/main/KmeansCode_JIOG.py
+### Kmeans Descriptions
+https://github.com/Juan-Ignacio-Ortega/Kmeans---KmeansPlusPlus---Birch/blob/main/KmeansDescription_JIOG.ipynb
+
+### Kmeans++ Code
+https://github.com/Juan-Ignacio-Ortega/Kmeans---KmeansPlusPlus---Birch/blob/main/Kmeans%2B%2BCode_JIOG.py
+### Kmeans++ Descriptions
+https://github.com/Juan-Ignacio-Ortega/Kmeans---KmeansPlusPlus---Birch/blob/main/Kmeans%2B%2BDescription_JIOG.ipynb
+
+### Birch Code
+https://github.com/Juan-Ignacio-Ortega/Kmeans---KmeansPlusPlus---Birch/blob/main/BirchCode_JIOG.py
+### Birch Descriptions
+https://github.com/Juan-Ignacio-Ortega/Kmeans---KmeansPlusPlus---Birch/blob/main/BirchDescription_JIOG.ipynb
 
 ## 1 Introduction
 The grouping is in everyday life, because it cannot be separated with a series of data that produce information to satisfy the needs of life. One of the most important tools in relation to data is to classify it, specifically in a set of categories or clusters (Syakur, Khotimah, Rochman, & Satoto, 2018).
